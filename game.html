@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="first_step">
+            <h1><b><i>Guess the Number 🎁✔</i></b></h1>
+        <select id="select1">
+            <option>--Choose the Level--</option>
+            <option id="lev1" value="level1">Level 1</option>
+            <option id="lev2" value="level2">Level 2</option>
+            <option id="lev3" value="level3">Level 3</option>
+        </select>
+
+        <button class="start" onclick="start_the_game()">Start Game</button>
+        </div>
+
+        <div id="second_step">
+
+            <div id="life-line">
+                <div id="one">❤</div>
+                <div id="two">❤</div>
+                <div id="three">❤</div>
+                <div id="four">❤</div>
+                <div id="five">❤</div>
+            </div>
+            
+        <div id="hint"></div>
+        <div class="input-box">
+            <input type="number" id="user_ans" name = "" readonly = true;/>
+        </div>
+
+        <div class="btn">
+            <button id="guess" onclick="guess_the_number()">Play</button> 
+            <button name="reset" id="clear" onclick="clear_box()">Reset</button>  
+        </div>
+        <div class="output"></div>
+        </div>
+        
+        <div id="result">
+        <div id="result1"></div>
+        <button id="referesh" onclick="restart()">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
